@@ -18,9 +18,8 @@ class String
   
   def count_sentences_words
     self.split(/[.!?]/).map{|x| !(x.match(/\w+/).nil?)}.reject{|x| x == false}.size 
-    # splits string into Array, collects those would-be sentences that actually contain word characters, removes false values, then counts the remaining booleans.
+ 
   end
 
 end
 
-"Well, I don't know, is this a sentence?? ??? What about this?".count_sentences_words
